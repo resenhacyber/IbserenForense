@@ -2,7 +2,21 @@
 
 **Desenvolvida por:** ResenhaCyber | Claudio Silva · Investigareee | Ibsen Maciel
 
+![Última versão](https://img.shields.io/github/v/release/resenhacyber/IbserenForense?label=vers%C3%A3o&color=4f46e5)
+![Plataforma](https://img.shields.io/badge/plataforma-Windows-blue)
+![Uso](https://img.shields.io/badge/uso-per%C3%ADcia%20autorizada-orange)
+
 > 📌 *Repositório institucional de apresentação. O código-fonte é proprietário e mantido em repositório privado.*
+
+---
+
+## ⬇️ Download
+
+| Versão | Plataforma | Download |
+|---|---|---|
+| **v8.9.5** (atual) | Windows 10/11 x64 | [Ibseren-Core-v8.9.5.zip](https://github.com/resenhacyber/IbserenForense/releases/latest) |
+
+> Para obter sua licença de uso, entre em contato com o comercial da **ResenhaCyber** ou da **Investigareee**.
 
 ---
 
@@ -43,7 +57,7 @@ A suíte atende aos mais diversos cenários encontrados em campo — de disposit
 | Plataforma | Cobertura |
 |---|---|
 | **Android** | Aquisição lógica, avançada e física, incluindo dispositivos sem root, sem desbloqueio de tela e versões recentes do sistema |
-| **iOS (iPhone / iPad)** | Detecção e aquisição lógica por meio dos serviços nativos do ecossistema Apple, com processamento de backups |
+| **iOS (iPhone / iPad)** | Detecção, backup iTunes, análise iLEAPP (100+ artefatos), screenshot ao vivo e inventário de aplicativos |
 | **Plataformas Qualcomm** | Suporte a aquisição física (imagem completa do armazenamento) |
 | **Plataformas MediaTek** | Suporte a aquisição física (imagem completa do armazenamento) |
 
@@ -161,14 +175,31 @@ Registro forense de conversas e conteúdo diretamente da interface do aplicativo
 - Preservação do conteúdo em imagem e em texto pesquisável.
 - Aplicável a mensageiros e plataformas corporativas sem vetor direto de extração.
 
-#### 🍏 Aquisição iOS
+#### 🍏 Aquisição iOS — Fluxo Completo
 
-Suporte dedicado a dispositivos Apple.
+Suporte dedicado a dispositivos Apple, com fluxo pericial completo integrado em um único ambiente.
 
-**Capacidades:**
-- Detecção robusta de iPhone, iPad e iPod conectados à estação de trabalho.
-- Aquisição lógica por meio dos serviços nativos do ecossistema Apple.
-- Processamento forense de backups iTunes, com interpretação de manifestos e estruturas proprietárias.
+**Fluxo de trabalho:**
+
+| Etapa | Função | Descrição |
+|---|---|---|
+| 1 | **Detectar dispositivo** | Identifica iPhone/iPad via USB — exibe UDID, modelo e versão do iOS |
+| 2 | **Informações completas** | IMEI, ICCID, número de série, capacidade de armazenamento |
+| 3 | **Backup iTunes** | Backup lógico completo via protocolo nativo Apple; fallback automático para `idevicebackup2` |
+| 4 | **Análise iLEAPP** | Processa o backup com 100+ parsers de artefatos — relatório HTML gerado automaticamente |
+| 5 | **Backup + iLEAPP** | Executa as etapas 3 e 4 em sequência com um único clique |
+| 6 | **Screenshot ao vivo** | Captura a tela atual do dispositivo durante a perícia |
+| 7 | **Inventário de apps** | Lista todos os aplicativos instalados com bundle ID, nome e versão — salvo em JSON |
+
+**Artefatos cobertos pelo iLEAPP (100+ categorias):**
+
+> Histórico de localização GPS · Saúde e atividade física · Histórico do Safari · Notas · Calendário e Lembretes · Screen Time · Uso de aplicativos · Notificações · Redes Wi-Fi conhecidas · Contas configuradas · Voicemail · Fotos (metadados EXIF) · Registros de chamadas · SMS e iMessage · Contatos · e muito mais.
+
+**Binários embutidos (sem dependências externas):**
+- `iLEAPP` — engine de análise de artefatos iOS
+- `idevicebackup2` — backup iTunes via libimobiledevice
+- `idevicescreenshot` — captura de tela ao vivo
+- `ideviceinstaller` — inventário de aplicativos instalados
 
 ---
 
@@ -205,7 +236,7 @@ Exame aprofundado de bancos de dados já extraídos, independentemente do dispos
 - Reconstrução de linha do tempo de mensagens e eventos.
 - Análise de estruturas internas do banco em busca de artefatos residuais.
 
-#### 📊 Pós-Processamento de Artefatos (ALEAPP)
+#### 📊 Pós-Processamento Android — ALEAPP
 
 Integração com a engine **ALEAPP** (Android Logs Events And Protobuf Parser) para análise automatizada dos dados adquiridos.
 
@@ -213,6 +244,16 @@ Integração com a engine **ALEAPP** (Android Logs Events And Protobuf Parser) p
 - Parsing de centenas de tipos de artefatos do sistema Android e de aplicativos.
 - Geração de relatórios estruturados a partir dos dados brutos da aquisição.
 - Execução como etapa opcional integrada ao fluxo de aquisição.
+
+#### 🍏 Pós-Processamento iOS — iLEAPP
+
+Integração com a engine **iLEAPP** (iOS Logs Events And Protobuf Parser) para análise forense completa de backups iTunes.
+
+**Capacidades:**
+- Mais de 100 parsers de artefatos nativos do iOS — Health, GPS, Safari, Notes, Screen Time, App Usage e muito mais.
+- Relatório HTML gerado automaticamente, pronto para anexar ao laudo pericial.
+- Funciona sobre qualquer backup iTunes obtido pela suíte ou por terceiros.
+- Motor embutido no executável — sem instalação adicional.
 
 #### 📋 Inventário Forense
 
@@ -268,9 +309,19 @@ Registro contínuo e exportável de todas as operações executadas pela ferrame
 
 ---
 
+## Histórico de Versões
+
+| Versão | Destaques |
+|---|---|
+| **v8.9.5** | Fluxo iOS completo: iLEAPP + idevicebackup2 + screenshot + inventário de apps — tudo embutido |
+| **v8.9.3** | Sistema de licenciamento online (IBSRN-\*) com validação por API |
+| **v8.9.x** | Módulos Android: CopyAll, Downgrade APK, decifração crypt12/14/15, View Once, Backup iOS |
+
+---
+
 ## Licenciamento
 
-O Ibseren Forense é distribuído sob **licenciamento comercial por módulo**, com ativação offline e validade configurável. Cada licença habilita exclusivamente os módulos contratados, com validação criptográfica de autenticidade e expiração.
+O Ibseren Forense é distribuído sob **licenciamento comercial**, com ativação por chave online e validade configurável. A licença é vinculada à máquina do perito e validada contra o servidor de licenças no momento da abertura.
 
 Para informações sobre aquisição de licenças, entre em contato com a **ResenhaCyber** ou a **Investigareee**.
 
