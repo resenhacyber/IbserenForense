@@ -52,7 +52,7 @@
 - **Driver Apple embutido** — inicia o `usbmuxd` automaticamente quando iTunes/Apple Devices não está instalado; exibe botões de instalação direta na Microsoft Store como fallback
 - **Installer profissional** — setup.exe com assistente de instalação, atalhos e desinstalador
 
-> Para obter sua licença de uso, entre em contato com o comercial da **ResenhaCyber** ou da **Investigareee**.
+> Para obter sua licença de uso, acesse o site oficial: **[www.ibseren.com](https://www.ibseren.com)**
 
 ---
 
@@ -380,7 +380,7 @@ Registro contínuo e exportável de todas as operações executadas pela ferrame
 
 O Ibseren Forense é distribuído sob **licenciamento comercial**, com ativação por chave online e validade configurável. A licença é vinculada à máquina do perito e validada contra o servidor de licenças no momento da abertura.
 
-Para informações sobre aquisição de licenças, entre em contato com a **ResenhaCyber** ou a **Investigareee**.
+Para informações sobre aquisição de licenças, acesse **[www.ibseren.com](https://www.ibseren.com)**.
 
 ---
 
