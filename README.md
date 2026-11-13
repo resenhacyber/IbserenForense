@@ -1,18 +1,33 @@
-# 🔬 Ibseren Forense — Suíte de Perícia Digital Móvel
+<div align="center">
 
-**Desenvolvida por:** ResenhaCyber | Claudio Silva · Investigareee | Ibsen Maciel
+<img src="https://ibseren.com/marca/ibseren-lockup-2400.png" alt="IBSEREN Forense" width="480"/>
 
-![Última versão](https://img.shields.io/badge/vers%C3%A3o-8.9.6-4f46e5)
-![Plataforma](https://img.shields.io/badge/plataforma-Windows-blue)
-![Uso](https://img.shields.io/badge/uso-per%C3%ADcia%20autorizada-orange)
+<br/>
 
-> 📌 *Repositório institucional de apresentação. O código-fonte é proprietário e mantido em repositório privado.*
+**Suíte de Perícia Digital Móvel**
+
+<br/>
+
+[![Versão](https://img.shields.io/badge/versão-8.9.6-1189E0?style=flat-square&labelColor=050A14)](https://github.com/resenhacyber/IbserenForense-Core/releases/latest)
+[![Plataforma](https://img.shields.io/badge/plataforma-Windows%2010%2F11-1189E0?style=flat-square&labelColor=050A14&logo=windows&logoColor=white)](https://github.com/resenhacyber/IbserenForense-Core/releases/latest)
+[![Uso](https://img.shields.io/badge/uso-perícia%20autorizada-FFB020?style=flat-square&labelColor=050A14)](https://www.ibseren.com)
+[![Site](https://img.shields.io/badge/site-ibseren.com-00BCF2?style=flat-square&labelColor=050A14)](https://www.ibseren.com)
+
+> Desenvolvida por **ResenhaCyber** · Claudio Silva &nbsp;×&nbsp; **Investigareee** · Ibsen Maciel
+>
+> *Repositório institucional de apresentação. O código-fonte é proprietário e mantido em repositório privado.*
+
+</div>
 
 ---
 
-## ⬇️ Download e Instalação — v8.9.6
+## ⬇️ Download — v8.9.6
 
-**[📦 Baixar Ibseren-Forense-Setup-v8.9.6.exe](https://github.com/resenhacyber/IbserenForense-Core/releases/latest)**
+<div align="center">
+
+**[📦 Ibseren-Forense-Setup-v8.9.6.exe](https://github.com/resenhacyber/IbserenForense-Core/releases/latest)**
+
+</div>
 
 | Campo | Valor |
 |---|---|
@@ -30,11 +45,11 @@
 4. Opcionalmente crie atalho na Área de Trabalho.
 5. Clique em **Concluir** para abrir o Ibseren Forense.
 
-> Para verificar a integridade do arquivo antes de executar:
+> **Verificação de integridade:**
 > ```powershell
 > Get-FileHash .\Ibseren-Forense-Setup-v8.9.6.exe -Algorithm SHA256
 > ```
-> Compare com o SHA-256 acima.
+> Compare o hash com o SHA-256 acima.
 
 ### Requisitos
 
@@ -44,18 +59,17 @@
 | Memória RAM | 4 GB mínimo (8 GB recomendado) |
 | Espaço em disco | 1 GB para instalação + espaço para evidências |
 | Android | Driver ADB instalado automaticamente |
-| iOS | Apple Mobile Device Service (iTunes / Apple Devices via Microsoft Store) ou driver embutido iniciado automaticamente pelo app |
+| iOS | Apple Mobile Device Service (iTunes / Apple Devices) ou driver embutido iniciado automaticamente |
 
 ### Novidades da v8.9.6
 
-- **Olho de Deus iOS** — recuperação de mídias View Once do WhatsApp em backups iTunes (iPhone/iPad), com relatório HTML profissional
-- **Driver Apple embutido** — inicia o `usbmuxd` automaticamente quando iTunes/Apple Devices não está instalado; exibe botões de instalação direta na Microsoft Store como fallback
-- **Installer profissional** — setup.exe com assistente de instalação, atalhos e desinstalador
+- **Olho de Deus iOS** — recuperação de mídias View Once do WhatsApp em backups iTunes
+- **Driver Apple embutido** — inicia `usbmuxd` automaticamente sem necessidade de instalação
+- **Installer profissional** — setup.exe com assistente, atalhos e desinstalador
 
 > Para obter sua licença de uso, acesse o site oficial: **[www.ibseren.com](https://www.ibseren.com)**
 
 ---
-
 
 ## Nossa História
 
@@ -390,4 +404,12 @@ Para informações sobre aquisição de licenças, acesse **[www.ibseren.com](ht
 
 ---
 
-🔬 **Ibseren Forense** — ResenhaCyber × Investigareee. Use com responsabilidade e dentro da legalidade.
+<div align="center">
+
+<img src="https://ibseren.com/marca/ibseren-simbolo.svg" alt="IBSEREN" width="48"/>
+
+**IBSEREN** — ResenhaCyber × Investigareee
+
+[www.ibseren.com](https://www.ibseren.com) · Use com responsabilidade e dentro da legalidade.
+
+</div>
