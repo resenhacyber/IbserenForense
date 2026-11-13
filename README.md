@@ -8,8 +8,8 @@
 
 <br/>
 
-[![Versão](https://img.shields.io/badge/versão-8.9.6-1189E0?style=flat-square&labelColor=050A14)](https://github.com/resenhacyber/IbserenForense-Core/releases/latest)
-[![Plataforma](https://img.shields.io/badge/plataforma-Windows%2010%2F11-1189E0?style=flat-square&labelColor=050A14&logo=windows&logoColor=white)](https://github.com/resenhacyber/IbserenForense-Core/releases/latest)
+[![Versão](https://img.shields.io/badge/versão-8.9.6-1189E0?style=flat-square&labelColor=050A14)](https://github.com/resenhacyber/IbserenForense/releases/download/v8.9.6/Ibseren-Core-v8.9.6.zip)
+[![Plataforma](https://img.shields.io/badge/plataforma-Windows%2010%2F11-1189E0?style=flat-square&labelColor=050A14&logo=windows&logoColor=white)](https://github.com/resenhacyber/IbserenForense/releases/download/v8.9.6/Ibseren-Core-v8.9.6.zip)
 [![Uso](https://img.shields.io/badge/uso-perícia%20autorizada-FFB020?style=flat-square&labelColor=050A14)](https://www.ibseren.com)
 [![Site](https://img.shields.io/badge/site-ibseren.com-00BCF2?style=flat-square&labelColor=050A14)](https://www.ibseren.com)
 
@@ -25,14 +25,14 @@
 
 <div align="center">
 
-**[📦 Ibseren-Forense-Setup-v8.9.6.exe](https://github.com/resenhacyber/IbserenForense-Core/releases/latest)**
+**[📦 Ibseren-Core-v8.9.6.zip](https://github.com/resenhacyber/IbserenForense/releases/download/v8.9.6/Ibseren-Core-v8.9.6.zip)**
 
 </div>
 
 | Campo | Valor |
 |---|---|
 | Versão | **8.9.6** |
-| Arquivo | `Ibseren-Forense-Setup-v8.9.6.exe` |
+| Arquivo | `Ibseren-Core-v8.9.6.zip` |
 | Tamanho | 306 MB |
 | SHA-256 | `9dbcc3929e0e42e451d40a0d7b01ac241492cf15b942dffc575980ded027d8ae` |
 | Sistema | Windows 10 / 11 (64-bit) |
@@ -40,14 +40,14 @@
 ### Passos de instalação
 
 1. Baixe o instalador no link acima.
-2. Execute `Ibseren-Forense-Setup-v8.9.6.exe` — confirme o UAC se solicitado.
-3. Siga o assistente em Português do Brasil.
-4. Opcionalmente crie atalho na Área de Trabalho.
-5. Clique em **Concluir** para abrir o Ibseren Forense.
+2. Extraia o zip para uma pasta de sua escolha.
+3. 
+4. 
+5. 
 
 > **Verificação de integridade:**
 > ```powershell
-> Get-FileHash .\Ibseren-Forense-Setup-v8.9.6.exe -Algorithm SHA256
+> Get-FileHash .\Ibseren-Core-v8.9.6.zip -Algorithm SHA256
 > ```
 > Compare o hash com o SHA-256 acima.
 
