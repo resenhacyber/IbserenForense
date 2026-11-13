@@ -2,7 +2,7 @@
 
 **Desenvolvida por:** ResenhaCyber | Claudio Silva · Investigareee | Ibsen Maciel
 
-![Última versão](https://img.shields.io/github/v/release/resenhacyber/IbserenForense?label=vers%C3%A3o&color=4f46e5)
+![Última versão](https://img.shields.io/badge/vers%C3%A3o-8.9.6-4f46e5)
 ![Plataforma](https://img.shields.io/badge/plataforma-Windows-blue)
 ![Uso](https://img.shields.io/badge/uso-per%C3%ADcia%20autorizada-orange)
 
@@ -10,15 +10,52 @@
 
 ---
 
-## ⬇️ Download
+## ⬇️ Download e Instalação — v8.9.6
 
-| Versão | Plataforma | Download |
-|---|---|---|
-| **v8.9.6** (atual) | Windows 10/11 x64 | [Ibseren-Core-v8.9.6.zip](https://github.com/resenhacyber/IbserenForense/releases/latest) |
+**[📦 Baixar Ibseren-Forense-Setup-v8.9.6.exe](https://github.com/resenhacyber/IbserenForense-Core/releases/latest)**
+
+| Campo | Valor |
+|---|---|
+| Versão | **8.9.6** |
+| Arquivo | `Ibseren-Forense-Setup-v8.9.6.exe` |
+| Tamanho | 306 MB |
+| SHA-256 | `9dbcc3929e0e42e451d40a0d7b01ac241492cf15b942dffc575980ded027d8ae` |
+| Sistema | Windows 10 / 11 (64-bit) |
+
+### Passos de instalação
+
+1. Baixe o instalador no link acima.
+2. Execute `Ibseren-Forense-Setup-v8.9.6.exe` — confirme o UAC se solicitado.
+3. Siga o assistente em Português do Brasil.
+4. Opcionalmente crie atalho na Área de Trabalho.
+5. Clique em **Concluir** para abrir o Ibseren Forense.
+
+> Para verificar a integridade do arquivo antes de executar:
+> ```powershell
+> Get-FileHash .\Ibseren-Forense-Setup-v8.9.6.exe -Algorithm SHA256
+> ```
+> Compare com o SHA-256 acima.
+
+### Requisitos
+
+| Componente | Requisito |
+|---|---|
+| Sistema Operacional | Windows 10 / 11 (64-bit) |
+| Memória RAM | 4 GB mínimo (8 GB recomendado) |
+| Espaço em disco | 1 GB para instalação + espaço para evidências |
+| Android | Driver ADB instalado automaticamente |
+| iOS | Apple Mobile Device Service (iTunes / Apple Devices via Microsoft Store) ou driver embutido iniciado automaticamente pelo app |
+
+### Novidades da v8.9.6
+
+- **Olho de Deus iOS** — recuperação de mídias View Once do WhatsApp em backups iTunes (iPhone/iPad), com relatório HTML profissional
+- **Driver Apple embutido** — inicia o `usbmuxd` automaticamente quando iTunes/Apple Devices não está instalado; exibe botões de instalação direta na Microsoft Store como fallback
+- **Installer profissional** — setup.exe com assistente de instalação, atalhos e desinstalador
 
 > Para obter sua licença de uso, entre em contato com o comercial da **ResenhaCyber** ou da **Investigareee**.
 
 ---
+
 
 ## Nossa História
 
