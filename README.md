@@ -14,7 +14,7 @@
 
 | Versão | Plataforma | Download |
 |---|---|---|
-| **v8.9.5** (atual) | Windows 10/11 x64 | [Ibseren-Core-v8.9.5.zip](https://github.com/resenhacyber/IbserenForense/releases/latest) |
+| **v8.9.6** (atual) | Windows 10/11 x64 | [Ibseren-Core-v8.9.6.zip](https://github.com/resenhacyber/IbserenForense/releases/latest) |
 
 > Para obter sua licença de uso, entre em contato com o comercial da **ResenhaCyber** ou da **Investigareee**.
 
@@ -57,7 +57,7 @@ A suíte atende aos mais diversos cenários encontrados em campo — de disposit
 | Plataforma | Cobertura |
 |---|---|
 | **Android** | Aquisição lógica, avançada e física, incluindo dispositivos sem root, sem desbloqueio de tela e versões recentes do sistema |
-| **iOS (iPhone / iPad)** | Detecção, backup iTunes, análise iLEAPP (100+ artefatos), screenshot ao vivo e inventário de aplicativos |
+| **iOS (iPhone / iPad)** | Detecção, backup iTunes, análise iLEAPP (100+ artefatos), screenshot ao vivo, inventário de aplicativos e recuperação de mídias View Once |
 | **Plataformas Qualcomm** | Suporte a aquisição física (imagem completa do armazenamento) |
 | **Plataformas MediaTek** | Suporte a aquisição física (imagem completa do armazenamento) |
 
@@ -216,15 +216,34 @@ Decriptografia de bancos de dados e mídias protegidos do WhatsApp.
 - Recuperação parcial de arquivos danificados.
 - Varredura de estruturas residuais do banco para recuperação de artefatos.
 
-#### 👁️ Olho de Deus
+#### 👁️ Olho de Deus — Android
 
-Recuperação de mídias de visualização única (View Once) do WhatsApp.
+Recuperação de mídias de visualização única (View Once) do WhatsApp em dispositivos Android.
 
 **Capacidades:**
 - Identificação de registros de conteúdo efêmero nas bases do aplicativo.
+- Busca de chave criptográfica em 10+ tabelas alternativas do schema Android.
+- Varredura WAL/freelist do banco para recuperação de chaves residuais.
 - Recuperação da mídia associada quando preservada de forma residual no dispositivo.
 - Documentação individual de cada item recuperado, com metadados e hash de integridade.
 - Relatório visual dedicado, autocontido e portátil.
+
+#### 👁️ Olho de Deus iOS — *Novo em v8.9.6*
+
+Recuperação de mídias de visualização única (View Once) do WhatsApp em iPhones, operando sobre o backup iTunes. Equivalente completo do Olho de Deus Android, adaptado ao schema Core Data do iOS.
+
+**Fluxo de uso:**
+1. Realize o backup iTunes do iPhone (não criptografado)
+2. Na aba iOS → seção *Olho de Deus iOS*, informe a pasta do backup
+3. Marque *Apenas View Once* para filtrar somente mensagens efêmeras
+4. Clique em 👁 Olho de Deus iOS
+
+**Capacidades:**
+- **Recuperação local do backup iTunes via Manifest.db** — localiza e decifra mídias diretamente do backup, sem necessidade de internet ou CDN.
+- **Download e decifração via CDN WhatsApp** — fallback automático para mídias não presentes no backup local.
+- **Busca de chave alternativa** — vasculha 7+ tabelas do schema iOS (`ZWAMESSAGE`, `ZWAEPHEMERAL`, `ZWAMEDIAKEYS`, `ZWAMESSAGESECRET`, `ZWAVIEWONCE`) quando a chave primária está ausente.
+- **Varredura WAL/freelist** do `ChatStorage.sqlite` para recuperação de chaves residuais em áreas deletadas.
+- **Relatório HTML profissional** com galeria visual, thumbnails embutidos em base64, SHA-256 por item e cadeia de custódia completa.
 
 #### 🔍 Análise Offline
 
@@ -313,6 +332,7 @@ Registro contínuo e exportável de todas as operações executadas pela ferrame
 
 | Versão | Destaques |
 |---|---|
+| **v8.9.6** | Olho de Deus iOS: recuperação de View Once via backup iTunes, busca de chave alternativa, WAL scan e relatório profissional |
 | **v8.9.5** | Fluxo iOS completo: iLEAPP + idevicebackup2 + screenshot + inventário de apps — tudo embutido |
 | **v8.9.3** | Sistema de licenciamento online (IBSRN-\*) com validação por API |
 | **v8.9.x** | Módulos Android: CopyAll, Downgrade APK, decifração crypt12/14/15, View Once, Backup iOS |
