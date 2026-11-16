@@ -8,8 +8,8 @@
 
 <br/>
 
-[![Versão](https://img.shields.io/badge/versão-8.9.6-1189E0?style=flat-square&labelColor=050A14)](https://github.com/resenhacyber/IbserenForense/releases/download/v8.9.6/Ibseren-Forense-Setup-v8.9.6.exe)
-[![Plataforma](https://img.shields.io/badge/plataforma-Windows%2010%2F11-1189E0?style=flat-square&labelColor=050A14&logo=windows&logoColor=white)](https://github.com/resenhacyber/IbserenForense/releases/download/v8.9.6/Ibseren-Forense-Setup-v8.9.6.exe)
+[![Versão](https://img.shields.io/badge/versão-8.9.6-1189E0?style=flat-square&labelColor=050A14)](https://www.ibseren.com)
+[![Plataforma](https://img.shields.io/badge/plataforma-Windows%2010%2F11-1189E0?style=flat-square&labelColor=050A14&logo=windows&logoColor=white)](https://www.ibseren.com)
 [![Uso](https://img.shields.io/badge/uso-perícia%20autorizada-FFB020?style=flat-square&labelColor=050A14)](https://www.ibseren.com)
 [![Site](https://img.shields.io/badge/site-ibseren.com-00BCF2?style=flat-square&labelColor=050A14)](https://www.ibseren.com)
 
@@ -21,53 +21,7 @@
 
 ---
 
-## ⬇️ Download — v8.9.6
-
-<div align="center">
-
-**[📦 Ibseren-Forense-Setup-v8.9.6.exe](https://github.com/resenhacyber/IbserenForense/releases/download/v8.9.6/Ibseren-Forense-Setup-v8.9.6.exe)**
-
-</div>
-
-| Campo | Valor |
-|---|---|
-| Versão | **8.9.6** |
-| Arquivo | `Ibseren-Forense-Setup-v8.9.6.exe` |
-| Tamanho | 306 MB |
-| SHA-256 | `9dbcc3929e0e42e451d40a0d7b01ac241492cf15b942dffc575980ded027d8ae` |
-| Sistema | Windows 10 / 11 (64-bit) |
-
-### Passos de instalação
-
-1. Baixe o instalador no link acima.
-2. Execute o instalador — confirme o UAC se solicitado.
-3. 
-4. 
-5. 
-
-> **Verificação de integridade:**
-> ```powershell
-> Get-FileHash .\Ibseren-Forense-Setup-v8.9.6.exe -Algorithm SHA256
-> ```
-> Compare o hash com o SHA-256 acima.
-
-### Requisitos
-
-| Componente | Requisito |
-|---|---|
-| Sistema Operacional | Windows 10 / 11 (64-bit) |
-| Memória RAM | 4 GB mínimo (8 GB recomendado) |
-| Espaço em disco | 1 GB para instalação + espaço para evidências |
-| Android | Driver ADB instalado automaticamente |
-| iOS | Apple Mobile Device Service (iTunes / Apple Devices) ou driver embutido iniciado automaticamente |
-
-### Novidades da v8.9.6
-
-- **Olho de Deus iOS** — recuperação de mídias View Once do WhatsApp em backups iTunes
-- **Driver Apple embutido** — inicia `usbmuxd` automaticamente sem necessidade de instalação
-- **Installer profissional** — setup.exe com assistente, atalhos e desinstalador
-
-> Para obter sua licença de uso, acesse o site oficial: **[www.ibseren.com](https://www.ibseren.com)**
+> Para obter sua licença de uso e download do software, acesse o site oficial: **[www.ibseren.com](https://www.ibseren.com)**
 
 ---
 
