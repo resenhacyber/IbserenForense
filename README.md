@@ -8,7 +8,7 @@
 
 <br/>
 
-[![Versão](https://img.shields.io/badge/versão-8.9.6-1189E0?style=flat-square&labelColor=050A14)](https://www.ibseren.com)
+[![Versão](https://img.shields.io/badge/versão-9.1.0-1189E0?style=flat-square&labelColor=050A14)](https://www.ibseren.com)
 [![Plataforma](https://img.shields.io/badge/plataforma-Windows%2010%2F11-1189E0?style=flat-square&labelColor=050A14&logo=windows&logoColor=white)](https://www.ibseren.com)
 [![Uso](https://img.shields.io/badge/uso-perícia%20autorizada-FFB020?style=flat-square&labelColor=050A14)](https://www.ibseren.com)
 [![Site](https://img.shields.io/badge/site-ibseren.com-00BCF2?style=flat-square&labelColor=050A14)](https://www.ibseren.com)
@@ -49,6 +49,30 @@ Bug Hunter focado em **Desenvolvimento Full Stack** e na identificação de vuln
 
 ---
 
+## O que há de novo na v9.1.0
+
+A versão 9.1.0 marca uma evolução significativa na experiência operacional da suíte, com foco em **fluidez de uso em campo** e **expansão do módulo Olho de Deus**.
+
+### ⚡ Faixa de Status do Dispositivo — por Aba
+
+Cada módulo agora exibe uma faixa compacta de status em tempo real diretamente na sua própria aba. O perito sabe, a qualquer momento e sem mudar de tela, se o dispositivo Android ou iOS está conectado, pronto para operação, aguardando autorização ADB ou desconectado — sem depender de indicadores globais ou de um painel separado.
+
+- Status atualizado automaticamente a cada 2 segundos
+- Preenchimento automático do número serial quando o dispositivo fica pronto
+- Cores distintas por estado: pronto (verde), aguardando autorização (amarelo), desconectado (cinza)
+
+### 👁️ Olho de Deus — Agora com Submenu Dedicado
+
+O módulo Olho de Deus ganhou uma seção própria na barra lateral, com entradas independentes para **Android** e **iOS** — refletindo a maturidade de ambos os fluxos e facilitando o acesso direto à plataforma de interesse sem navegar por menus intermediários.
+
+### 🔧 Melhorias Internas
+
+- Correções e ajustes em múltiplos módulos de aquisição e análise
+- Estabilidade aprimorada nos fluxos iOS com libimobiledevice
+- Melhorias na geração de relatórios HTML com cadeia de custódia
+
+---
+
 ## Visão Geral
 
 O **Ibseren Forense** é uma suíte profissional de perícia digital especializada na aquisição, análise e documentação de evidências provenientes de dispositivos móveis **Android** e **iOS**. Projetada para uso em perícias oficialmente autorizadas, a ferramenta cobre desde o reconhecimento do dispositivo até a emissão do relatório pericial final, com cadeia de custódia, integridade criptográfica e rastreabilidade completas de todas as operações.
@@ -86,6 +110,7 @@ Reconhecimento automatizado de qualquer dispositivo conectado, Android ou Apple,
 - Mapeamento dos vetores de aquisição disponíveis para o dispositivo em questão.
 - Recomendação automática da estratégia de aquisição mais adequada ao cenário identificado.
 - Inventário de aplicativos instalados, com destaque para mensageiros suportados e indicadores de interesse forense.
+- **Faixa de status por módulo** — cada aba da suíte exibe em tempo real se o dispositivo está pronto, aguardando ou desconectado.
 
 ---
 
@@ -223,7 +248,7 @@ Decriptografia de bancos de dados e mídias protegidos do WhatsApp.
 
 #### 👁️ Olho de Deus — Android
 
-Recuperação de mídias de visualização única (View Once) do WhatsApp em dispositivos Android.
+Recuperação de mídias de visualização única (View Once) do WhatsApp em dispositivos Android. Acessível diretamente pela seção **Olho de Deus** na barra lateral.
 
 **Capacidades:**
 - Identificação de registros de conteúdo efêmero nas bases do aplicativo.
@@ -233,13 +258,13 @@ Recuperação de mídias de visualização única (View Once) do WhatsApp em dis
 - Documentação individual de cada item recuperado, com metadados e hash de integridade.
 - Relatório visual dedicado, autocontido e portátil.
 
-#### 👁️ Olho de Deus iOS — *Novo em v8.9.6*
+#### 👁️ Olho de Deus — iOS
 
-Recuperação de mídias de visualização única (View Once) do WhatsApp em iPhones, operando sobre o backup iTunes. Equivalente completo do Olho de Deus Android, adaptado ao schema Core Data do iOS.
+Recuperação de mídias de visualização única (View Once) do WhatsApp em iPhones, operando sobre o backup iTunes. Acessível diretamente pela seção **Olho de Deus** na barra lateral, entrada dedicada iOS.
 
 **Fluxo de uso:**
 1. Realize o backup iTunes do iPhone (não criptografado)
-2. Na aba iOS → seção *Olho de Deus iOS*, informe a pasta do backup
+2. Na seção *Olho de Deus iOS* da barra lateral, informe a pasta do backup
 3. Marque *Apenas View Once* para filtrar somente mensagens efêmeras
 4. Clique em 👁 Olho de Deus iOS
 
@@ -337,6 +362,7 @@ Registro contínuo e exportável de todas as operações executadas pela ferrame
 
 | Versão | Destaques |
 |---|---|
+| **v9.1.0** | Faixa de status de dispositivo por aba (atualização em tempo real); Olho de Deus com submenu dedicado Android/iOS na barra lateral; melhorias de estabilidade em múltiplos módulos |
 | **v8.9.6** | Olho de Deus iOS: recuperação de View Once via backup iTunes, busca de chave alternativa, WAL scan e relatório profissional |
 | **v8.9.5** | Fluxo iOS completo: iLEAPP + idevicebackup2 + screenshot + inventário de apps — tudo embutido |
 | **v8.9.3** | Sistema de licenciamento online (IBSRN-\*) com validação por API |
